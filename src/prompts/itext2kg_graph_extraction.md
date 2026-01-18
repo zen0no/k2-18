@@ -86,7 +86,7 @@ For nodes in this slice use the following IDs:
 Extract nodes first using **exactly** these types and criteria:
 
 1. **Chunk Nodes**: Create `Chunk` nodes by splitting the Slice text into coherent contextual units of explanation or instructional content:
-  * Aim for approximately 150-400 words per Chunk, preserving paragraph and semantic integrity.
+  * Aim for approximately 60-120 words per Chunk, preserving paragraph and semantic integrity.
   * If a fragment contains code or formulas, retain them unchanged within the `text` field and do not split them across multiple Chunks.
   * Preserve hyperlinks exactly as they appear. Inline URLs, `<a>...</a>` tags, or Markdown links **must not** be truncated, altered, or split across Chunk nodes.
   * Always output **at least one** `Chunk` node representing the current slice.
